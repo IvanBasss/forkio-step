@@ -1,3 +1,5 @@
+@use 'mixins';
+
 .here {
     max-height: 100%;
     background: #f4f4f4;
@@ -41,8 +43,6 @@
 // ================================ //
 
 .here__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
@@ -67,8 +67,7 @@
     }
 }
 .here__blocks {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     row-gap: 33px;
     order: 1;
     flex: 1 1 44%;
@@ -109,12 +108,10 @@
     }
 
     .block__info {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         row-gap: 16px;
     }
     .block-info__title {
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -122,7 +119,6 @@
         color: #323232;
     }
     .block-info__text {
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;

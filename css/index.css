@@ -38,6 +38,12 @@ body {
   line-height: 1;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -82,7 +88,6 @@ body {
   height: 37px;
   background: #8d81ac;
   border-radius: 40px;
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -430,7 +435,6 @@ body {
   }
 }
 .menu__item {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -461,7 +465,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -545,12 +548,10 @@ body {
 }
 
 .app__title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 82px;
   line-height: 82px;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 19px;
   -webkit-transform: translate(0px, 120%);
       -ms-transform: translate(0px, 120%);
@@ -617,9 +618,6 @@ body {
   }
 }
 .app__text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -736,9 +734,6 @@ body {
   }
 }
 .download-button-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 15px;
   color: #848e97;
@@ -758,8 +753,6 @@ body {
 }
 
 .revolutionary-main-title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 54px;
   line-height: 54px;
@@ -986,8 +979,6 @@ body {
   }
 }
 .here__title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 50px;
@@ -1094,7 +1085,6 @@ body {
   row-gap: 16px;
 }
 .block .block-info__title {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1102,7 +1092,6 @@ body {
   color: #323232;
 }
 .block .block-info__text {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1229,8 +1218,6 @@ body {
   }
 }
 .people__title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 50px;
@@ -1320,7 +1307,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
@@ -1393,8 +1380,6 @@ body {
   }
 }
 .fork__title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 50px;
@@ -1568,9 +1553,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(255, 255, 255, 0.06);
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1615,8 +1597,6 @@ body {
 }
 
 .content__price {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
@@ -1634,9 +1614,6 @@ body {
 }
 
 .content__month {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -1659,9 +1636,6 @@ body {
 }
 
 .content__desk {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
@@ -1686,7 +1660,6 @@ body {
 .button-box {
   width: 160px;
   height: 42px;
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;

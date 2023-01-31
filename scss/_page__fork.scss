@@ -1,4 +1,5 @@
-// @use '_html';
+@use 'variables';
+@use 'mixins';
 
 .fork {
     background-image: url('../img/page__fork/bg.jpg');
@@ -30,12 +31,10 @@
 }
 
 .fork__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
-    color: #fff;
+    color: $primary-color;
     text-align: center;
     margin-bottom: 112px;
 }
@@ -118,8 +117,7 @@
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
 }
 .box__body {
@@ -139,8 +137,7 @@
 }
 
 .box-main {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
 }
 .box__body-main {
@@ -156,13 +153,10 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.06);
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-color;
 }
 
 .title-main {
@@ -171,16 +165,14 @@
 }
 
 .box__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     width: 100%;
     height: 360px;
     background: rgba(255, 255, 255, 0.11);
 }
 .box__content-main {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     width: 100%;
     height: 449px;
@@ -190,12 +182,10 @@
 // ================================= //
 
 .content__price {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-color;
     margin-top: 30px;
 }
 .price-dollar {
@@ -207,13 +197,10 @@
 }
 
 .content__month {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-color;
     margin-top: 20px;
     position: relative;
 
@@ -231,12 +218,9 @@
     margin-top: 16px;
 }
 .content__desk {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #fff;
+    color: $primary-color;
     margin-top: 79px;
     text-align: center;
     width: 210px;
@@ -256,13 +240,12 @@
 .button-box {
     width: 160px;
     height: 42px;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #fff;
+    color: $primary-color;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 40px;
     cursor: pointer;

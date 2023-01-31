@@ -1,4 +1,5 @@
-// @use '_html';
+@use 'variables';
+@use 'mixins';
 
 .people {
     background-image: url('../img/page__people/bg/testmonials-bg\ 1.jpg');
@@ -31,8 +32,7 @@
 .people__wrapp {
     padding: 108px 0px 20px 0px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
 }
 @media (max-width: 1199px) {
@@ -46,12 +46,10 @@
     }
 }
 .people__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
-    color: #fff;
+    color: $primary-color;
     margin-bottom: 82px;
     text-align: center;
 }
@@ -91,8 +89,7 @@
     }
 }
 .people__block {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     max-width: 315px;
     row-gap: 30px;
@@ -118,7 +115,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: $primary-color;
     text-align: center;
 }
 .block-people__logo {
