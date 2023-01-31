@@ -1,6 +1,7 @@
+// @use '_html';
+
 .fork {
     background-image: url('../img/page__fork/bg.jpg');
-    // background-position: 50% 50%;
     background-size: cover;
 }
 @media (max-width: 1199px) {
@@ -15,7 +16,7 @@
 }
 
 .fork__wrapp {
-    padding: 108px 0px 73px 0px; // змінити
+    padding: 108px 0px 73px 0px;
 }
 @media (max-width: 1199px) {
     .fork__wrapp {
@@ -34,7 +35,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     margin-bottom: 112px;
 }
@@ -70,6 +71,49 @@
 @media (max-width: 767px) {
     .fork__boxs {
         row-gap: 18px;
+    }
+}
+
+.fork__box {
+    &:first-child {
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.3s;
+
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+    &:nth-child(2) {
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.4s;
+
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+    &:nth-child(3) {
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.5s;
+
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+    &:last-child {
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all 0.8s ease 0.6s;
+
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
     }
 }
 
@@ -112,13 +156,13 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.06);
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
 }
 
 .title-main {
@@ -146,12 +190,12 @@
 // ================================= //
 
 .content__price {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     margin-top: 30px;
 }
 .price-dollar {
@@ -163,13 +207,13 @@
 }
 
 .content__month {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     margin-top: 20px;
     position: relative;
 
@@ -187,12 +231,12 @@
     margin-top: 16px;
 }
 .content__desk {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #ffffff;
+    color: #fff;
     margin-top: 79px;
     text-align: center;
     width: 210px;
@@ -212,13 +256,13 @@
 .button-box {
     width: 160px;
     height: 42px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 40px;
     cursor: pointer;

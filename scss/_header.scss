@@ -31,6 +31,15 @@
     align-items: center;
     color: #8d81ac;
     margin-top: 30px;
+
+    transform: translate(0px, -120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+
+    &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 1199px) {
     .menu {

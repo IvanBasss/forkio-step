@@ -68,7 +68,7 @@
 }
 
 .download-button-text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -86,7 +86,7 @@
 // ================================== //
 
 .revolutionary-main-title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 54px;
@@ -94,6 +94,15 @@
     text-transform: uppercase;
     color: #635c73;
     margin-bottom: 35px;
+
+    transform: translate(0px, -175%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+
+    &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 1199px) {
     .revolutionary-main-title {
@@ -113,7 +122,7 @@
 }
 
 .revolutionary-main-text {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -121,6 +130,15 @@
     color: #323232;
     text-align: center;
     margin-bottom: 13px;
+
+    transform: translate(0px, -175%);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
+
+    &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 1199px) {
     .revolutionary-main-text {
@@ -140,6 +158,15 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px;
+
+    transform: translate(0px, -175%);
+    opacity: 0;
+    transition: all 0.8s ease 0.6s;
+
+    &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 767px) {
     .wrapp-main-buttons {
